@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jumia Clone</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="/">JUMIA</a>
+                </div>
+                
+                <div class="search-bar">
+                    <input type="text" placeholder="Search products, brands and categories">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+                
+                <nav class="nav-desktop">
+                    <a href="/account" class="nav-link">
+                        <i class="fas fa-user"></i>
+                        <span>Account</span>
+                    </a>
+                    <a href="/cart" class="nav-link">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span>Cart</span>
+                    </a>
+                </nav>
+                
+                <button class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            
+            <div class="search-mobile">
+                <input type="text" placeholder="Search products...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            
+            <nav class="nav-mobile">
+                <a href="/account">Account</a>
+                <a href="/cart">Cart</a>
+                <a href="/categories">Categories</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="hero-slider">
+            <div class="slides">
+                <div class="slide active">
+                    <img src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=1200&h=400&fit=crop" alt="Summer Sale">
+                    <div class="slide-content">
+                        <h2>Summer Sale</h2>
+                        <p>Up to 50% off on selected items</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="https://images.unsplash.com/photo-1607082349566-187342175e2f?w=1200&h=400&fit=crop" alt="New Arrivals">
+                    <div class="slide-content">
+                        <h2>New Arrivals</h2>
+                        <p>Check out our latest collection</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="https://images.unsplash.com/photo-1607082350899-7e105aa886ae?w=1200&h=400&fit=crop" alt="Flash Deals">
+                    <div class="slide-content">
+                        <h2>Flash Deals</h2>
+                        <p>Limited time offers on trending products</p>
+                    </div>
+                </div>
+            </div>
+            <button class="slider-btn prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="slider-btn next"><i class="fas fa-chevron-right"></i></button>
+            <div class="slider-dots"></div>
+        </div>
+
+        <section class="featured-products container">
+            <h2>Featured Products</h2>
+            <div class="products-grid" id="productsGrid"></div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>ABOUT JUMIA</h3>
+                    <ul>
+                        <li><a href="/about">About Us</a></li>
+                        <li><a href="/careers">Careers</a></li>
+                        <li><a href="/terms">Terms & Conditions</a></li>
+                        <li><a href="/privacy">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>CUSTOMER SERVICE</h3>
+                    <ul>
+                        <li><a href="/help">Help Center</a></li>
+                        <li><a href="/contact">Contact Us</a></li>
+                        <li><a href="/shipping">Shipping Information</a></li>
+                        <li><a href="/returns">Returns & Exchanges</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>PAYMENT METHODS</h3>
+                    <ul>
+                        <li>Credit Card</li>
+                        <li>Debit Card</li>
+                        <li>Bank Transfer</li>
+                        <li>Cash on Delivery</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>CONNECT WITH US</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Jumia. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/slider.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
